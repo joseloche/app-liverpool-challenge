@@ -1,7 +1,4 @@
-# LIVERPOOL CHALLENGE | CHALLENGE FRONT
-
-### for consume the micro service:
-
+# LIVERPOOL CHALLENGE | FRONT
 
 #### example the web challenge liverpool 
 
