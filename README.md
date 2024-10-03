@@ -17,6 +17,10 @@
 
 ![add folio](images/folioby3.png)
 
+-search by folio
+
+![add folio](images/search.png)
+
 <div style="text-align: right;">
 <small> &copy; 2024 José Luis Hernández Velázquez. | Repository private Exam thecnical</small>
-</div>
+</div>![add folio](images/folioby3.png)

@@ -1,6 +1,10 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 function Folios({ folios }) {
+  if (!folios || folios.length === 0) {
+    return <p>No se encontraron folios.</p>;
+  }
+
   return (
     <table className='table'>
       <thead>
@@ -11,7 +15,7 @@ function Folios({ folios }) {
         </tr>
       </thead>
       <tbody>
-        {folios.map(folio =>(
+        {folios.map(folio => (
           <tr key={folio.idFolio}>
             <td>{folio.idFolio}</td>
             <td>{folio.folio}</td>

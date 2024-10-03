@@ -8,24 +8,21 @@ function App() {
   const [folios, setFolios] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Función para obtener los folios
   const getFolios = async (term = '') => {
     try {
       const response = await fetch(`http://192.168.100.85:9000/api/liverpool-challenge/folio?folio=${term}`);
       const data = await response.json();
-      console.log(data);
+      console.log('Response data:', data); // Verifica la estructura de los datos
       setFolios(data);
     } catch (error) {
       console.error('Error fetching folios:', error);
     }
   };
 
-  // Efecto para cargar folios al montar el componente y cuando searchTerm cambia
   useEffect(() => {
-    getFolios(searchTerm);
+    getFolios(searchTerm); // Llama a getFolios con el término actual
   }, [searchTerm]);
 
-  // Manejar la adición de un nuevo folio
   const handleFolioAdded = () => {
     getFolios(searchTerm); // Volver a cargar los folios después de agregar uno nuevo
   };
