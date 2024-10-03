@@ -1,0 +1,10 @@
+.App{
+    width: 500px;
+    margin-inline: auto;
+  }
+  
+  @media (min-width: 280px) and (max-width: 767px) {
+    .App{
+      width: calc(100vw - 2rem);
+    }
+  }
