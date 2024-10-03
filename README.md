@@ -17,7 +17,7 @@
 
 ![add folio](images/folioby3.png)
 
--search by folio
+- search by folio
 
 ![add folio](images/search.png)
 
